@@ -1,15 +1,10 @@
+"use client";
+import React, { useState } from "react";
 
-import React from 'react'
-
-
-
-export default function ProductsLayout({children}:{
-  children:React.ReactNode
-}) 
-{
-  return (
-    <div><h3>This is products related PAGE</h3>
-    {children}
-    </div>
-  )
+export default function ProductsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <div>{children}</div>;
 }

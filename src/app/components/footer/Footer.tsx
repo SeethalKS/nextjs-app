@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect } from 'react'
-
+import './Footer.css'
 export default function Footer() {
     useEffect(()=>{
         console.log("Fetch call from useeffect-Footer");
@@ -8,6 +8,6 @@ export default function Footer() {
     },[]);
     console.log("Footer");
   return (
-    <div>Footer</div>
+    <div className='downdiv'>@DummyAmazon</div>
   )
 }

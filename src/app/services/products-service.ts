@@ -2,11 +2,9 @@ import {ServiceBase} from "./service-base";
 
 export class ProductsService extends ServiceBase
 {
-   static getProducts=async () =>{
+   static getProducts=async () =>
+      {
    var productsResp=await fetch(this.getUrl('/products'),{
-      // next:{
-      //    revalidate:60
-      // }
       cache:'no-store'
    });
    var products=await productsResp.json();
@@ -18,4 +16,5 @@ export class ProductsService extends ServiceBase
     var product = await productResp.json();
     return product;
  }
+ 
 }
